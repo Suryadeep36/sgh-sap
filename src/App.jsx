@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Operator/Dashboard"
 import Inventory from "./components/Operator/Inventory"
 import Report from "./components/Operator/Report"
+import AdminDashboard from "./Admin"
 function App() {
   return (
     <>
