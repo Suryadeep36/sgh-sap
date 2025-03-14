@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Menu, Grid, Box, BarChart } from "lucide-react";
 import { FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom";

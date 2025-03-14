@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Monitors",
+        "quantity": 15,
+        "department": "IT",
+        "price (per piece)": 5000,
+        "category": "Electronics",
+        "total_value": 75000,
+        "status": "Pending" 
+    },
+    {
+        "id": 2,
+        "name": "PLC Controllers",
+        "quantity": 3,
+        "department": "IC",
+        "price (per piece)": 35000,
+        "category": "Automation",
+        "total_value": 105000,
+        "status": "Pending" 
+    },
+    {
+        "id": 3,
+        "name": "Hydraulic Cylinders",
+        "quantity": 4,
+        "department": "MH",
+        "price (per piece)": 15000,
+        "category": "Hydraulics",
+        "total_value": 60000,
+        "status": "Pending" 
+    },
+    {
+        "id": 4,
+        "name": "Beakers (500ml)",
+        "quantity": 20,
+        "department": "CH",
+        "price (per piece)": 300,
+        "category": "Lab Equipment",
+        "total_value": 6000,
+        "status": "Pending" 
+    },
+    {
+        "id": 5,
+        "name": "Network Switches",
+        "quantity": 5,
+        "department": "IT",
+        "price (per piece)": 8000,
+        "category": "Networking Equipment",
+        "total_value": 40000,
+        "status": "Pending" 
+    },
+    {
+        "id": 6,
+        "name": "Thermocouples",
+        "quantity": 10,
+        "department": "IC",
+        "price (per piece)": 2500,
+        "category": "Temperature Sensors",
+        "total_value": 25000,
+        "status": "Pending" 
+    }
+]

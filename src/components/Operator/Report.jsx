@@ -47,7 +47,7 @@ export default function Operator() {
           >
             <FiMenu size={24} />
           </button>
-          <h1 className="text-2xl font-semibold">Operator Dashboard</h1>
+          <h1 className="text-2xl font-semibold">Operator Reports</h1>
         </header>
 
         {/* Inventory Overview */}

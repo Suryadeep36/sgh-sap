@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "name": "Tendor-1",
+        "items" : [
+            {
+                "id": 1,
+                "name": "Monitors",
+                "quantity": 15,
+                "department": "IT",
+                "price (per piece)": 5000,
+                "category": "Electronics",
+                "total_value": 75000
+            },
+            {
+                "id": 2,
+                "name": "PLC Controllers",
+                "quantity": 3,
+                "department": "IC",
+                "price (per piece)": 35000,
+                "category": "Automation",
+                "total_value": 105000
+            },
+            {
+                "id": 3,
+                "name": "Hydraulic Cylinders",
+                "quantity": 4,
+                "department": "MH",
+                "price (per piece)": 15000,
+                "category": "Hydraulics",
+                "total_value": 60000
+            },
+            {
+                "id": 4,
+                "name": "Beakers (500ml)",
+                "quantity": 20,
+                "department": "CH",
+                "price (per piece)": 300,
+                "category": "Lab Equipment",
+                "total_value": 6000
+            },
+            {
+                "id": 5,
+                "name": "Network Switches",
+                "quantity": 5,
+                "department": "IT",
+                "price (per piece)": 8000,
+                "category": "Networking Equipment",
+                "total_value": 40000
+            },
+            {
+                "id": 6,
+                "name": "Thermocouples",
+                "quantity": 10,
+                "department": "IC",
+                "price (per piece)": 2500,
+                "category": "Temperature Sensors",
+                "total_value": 25000
+            }
+        ],
+        "status": "Pending" 
+    },
+    {
+        "id": 2,
+        "name": "Tendor-2",
+        "items": [
+            {
+                "id": 1,
+                "name": "Monitors",
+                "quantity": 15,
+                "department": "IT",
+                "price (per piece)": 5000,
+                "category": "Electronics",
+                "total_value": 75000
+            },
+            {
+                "id": 2,
+                "name": "PLC Controllers",
+                "quantity": 3,
+                "department": "IC",
+                "price (per piece)": 35000,
+                "category": "Automation",
+                "total_value": 105000
+            },
+            {
+                "id": 3,
+                "name": "Hydraulic Cylinders",
+                "quantity": 4,
+                "department": "MH",
+                "price (per piece)": 15000,
+                "category": "Hydraulics",
+                "total_value": 60000
+            },
+            {
+                "id": 4,
+                "name": "Beakers (500ml)",
+                "quantity": 20,
+                "department": "CH",
+                "price (per piece)": 300,
+                "category": "Lab Equipment",
+                "total_value": 6000
+            },
+            {
+                "id": 5,
+                "name": "Network Switches",
+                "quantity": 5,
+                "department": "IT",
+                "price (per piece)": 8000,
+                "category": "Networking Equipment",
+                "total_value": 40000
+            },
+            {
+                "id": 6,
+                "name": "Thermocouples",
+                "quantity": 10,
+                "department": "IC",
+                "price (per piece)": 2500,
+                "category": "Temperature Sensors",
+                "total_value": 25000
+            }
+        ],
+        "status": "Pending"
+    },
+    {
+        "id": 3,
+        "name": "Tendor-3",
+        "items": [
+            {
+                "id": 7,
+                "name": "Oscilloscopes",
+                "quantity": 2,
+                "department": "EC",
+                "price (per piece)": 45000,
+                "category": "Electronics",
+                "total_value": 90000
+            },
+            {
+                "id": 8,
+                "name": "Laptops",
+                "quantity": 10,
+                "department": "CS",
+                "price (per piece)": 60000,
+                "category": "Computing",
+                "total_value": 600000
+            },
+            {
+                "id": 9,
+                "name": "Induction Motors",
+                "quantity": 3,
+                "department": "EE",
+                "price (per piece)": 25000,
+                "category": "Electrical Equipment",
+                "total_value": 75000
+            }
+        ],
+        "status": "Approved"
+    },
+    {
+        "id": 4,
+        "name": "Tendor-4",
+        "items": [
+            {
+                "id": 10,
+                "name": "3D Printers",
+                "quantity": 2,
+                "department": "ME",
+                "price (per piece)": 120000,
+                "category": "Manufacturing",
+                "total_value": 240000
+            },
+            {
+                "id": 11,
+                "name": "Gas Chromatography System",
+                "quantity": 1,
+                "department": "CH",
+                "price (per piece)": 350000,
+                "category": "Lab Equipment",
+                "total_value": 350000
+            },
+            {
+                "id": 12,
+                "name": "Power Supplies",
+                "quantity": 5,
+                "department": "EE",
+                "price (per piece)": 15000,
+                "category": "Electrical Equipment",
+                "total_value": 75000
+            }
+        ],
+        "status": "Rejected"
+    },
+    {
+        "id": 4,
+        "name": "Tendor-5",
+        "items": [
+            {
+                "id": 13,
+                "name": "Smart Boards",
+                "quantity": 4,
+                "department": "CS",
+                "price (per piece)": 70000,
+                "category": "Education",
+                "total_value": 280000
+            },
+            {
+                "id": 14,
+                "name": "Robotic Arms",
+                "quantity": 2,
+                "department": "ME",
+                "price (per piece)": 200000,
+                "category": "Automation",
+                "total_value": 400000
+            },
+            {
+                "id": 15,
+                "name": "High-Performance Servers",
+                "quantity": 1,
+                "department": "IT",
+                "price (per piece)": 600000,
+                "category": "Computing",
+                "total_value": 600000
+            }
+        ],
+        "status": "Pending"
+    }
+    
+]
