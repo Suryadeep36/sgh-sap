@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, Grid, Box, BarChart } from "lucide-react";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu,FiArrowLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import requestItems from "./requestItems.json";
 import tendors from "./tendors.json";
@@ -25,17 +25,20 @@ export default function Operator() {
   );
 
   return (
-    <div className="flex bg-gray-900 text-white w-full">
+    <div className="flex bg-gray-900 text-white w-full  overflow-hidden">
       {/* Sidebar */}
       <div
-        className={`bg-gray-800 w-72 p-5 shadow-lg ${
-          isSidebarOpen ? "block" : "hidden"
-        }`}
-      >
+  className={`bg-gray-800 w-72 p-5 shadow-lg fixed h-full top-0 left-0 transform ${
+    isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+  } transition-transform duration-300 z-50 md:relative md:translate-x-0`}
+>
         <h2 className="text-2xl font-bold mb-6 text-gray-300">
           Operator Panel
         </h2>
         <ul className="space-y-4">
+             <button className="flex items-center gap-2 p-3" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+                            <FiArrowLeft size={24} />
+                          </button>
           <li className="flex items-center gap-2 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer transition">
             <Grid size={20} /> <Link to="/operator/">Dashboard</Link>
           </li>
@@ -50,7 +53,7 @@ export default function Operator() {
       </div>
 
       {/* Main Content */}
-      <div className="p-6 bg-gray-900 text-white">
+      <div className="w-full md:flex-1 p-6 bg-gray-900 text-white">
         <div className="p-6 bg-gray-900 text-white">
           <header className="bg-blue-600 text-white p-4 rounded-lg shadow-md flex items-center">
             <button
@@ -63,7 +66,7 @@ export default function Operator() {
           </header>
 
           {/* Filter Buttons */}
-          <div className="mt-6 flex gap-4 mb-4">
+          <div className="mt-6 flex gap-4 mb-4 overflow-x-auto">
             {["All", "Pending", "Approved", "Rejected"].map((status) => (
               <button
                 key={status}
@@ -78,7 +81,7 @@ export default function Operator() {
           </div>
 
           {/* Requests Table */}
-          <div className="bg-gray-800 p-4 rounded-lg shadow-md">
+          <div className="bg-gray-800 p-4 rounded-lg shadow-md overflow-x-auto">
             <table className="w-full border-collapse border border-gray-700 text-white">
               <thead>
                 <tr className="bg-gray-700 text-gray-300">
@@ -145,7 +148,7 @@ export default function Operator() {
           </div>
           <div className="m-5">
             <h2 className="mt-2 text-2xl">Approved Items to create a tender</h2>
-            <div className="bg-gray-800 p-4 rounded-lg shadow-md">
+            <div className="bg-gray-800 p-4 rounded-lg shadow-md overflow-x-auto">
               <table className="w-full border-collapse border border-gray-700 text-white">
                 <thead>
                   <tr className="bg-gray-700 text-gray-300">
@@ -207,7 +210,7 @@ export default function Operator() {
           </div>
           <div className="m-5">
             <h2 className="mt-2 text-2xl">Previous Tender Requests to Head</h2>
-            <div className="bg-gray-800 p-4 rounded-lg shadow-md">
+            <div className="bg-gray-800 p-4 rounded-lg shadow-md overflow-x-auto">
               <table className="w-full border-collapse border border-gray-700 text-white">
                 <thead>
                   <tr className="bg-gray-700 text-gray-300">
