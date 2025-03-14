@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, FileText, Package, BarChart } from "lucide-react";
 import tendersData from "../Operator/tendors.json";
 import stockData from "../Operator/items.json";
-import { Pie, Doughnut, Bar } from "react-chartjs-2";
+import { Pie, Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   ArcElement,
@@ -11,9 +11,6 @@ import {
   CategoryScale,
   LinearScale,
   BarElement,
-  PointElement,
-  LineElement,
-  BubbleController,
 } from "chart.js";
 
 ChartJS.register(
@@ -22,10 +19,7 @@ ChartJS.register(
   Legend,
   CategoryScale,
   LinearScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  BubbleController
+  BarElement
 );
 
 function TenderRequest({ tender }) {
@@ -73,6 +67,11 @@ export default function AdminDashboard() {
     return acc;
   }, {});
 
+  const departmentCounts = stock.reduce((acc, item) => {
+    acc[item.department] = (acc[item.department] || 0) + item.total_value;
+    return acc;
+  }, {});
+
   const categoryData = {
     labels: Object.keys(categoryCounts),
     datasets: [
@@ -80,6 +79,17 @@ export default function AdminDashboard() {
         label: "Inventory Category Distribution",
         data: Object.values(categoryCounts),
         backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#4CAF50"],
+      },
+    ],
+  };
+
+  const departmentData = {
+    labels: Object.keys(departmentCounts),
+    datasets: [
+      {
+        label: "Department Inventory Value",
+        data: Object.values(departmentCounts),
+        backgroundColor: ["#36A2EB", "#FF6384", "#FFCE56", "#4CAF50"],
       },
     ],
   };
@@ -95,11 +105,8 @@ export default function AdminDashboard() {
         </ul>
       </div>
       <div className="flex-1 flex flex-col w-full">
-        <div className="bg-gray-700 p-5 shadow-md flex justify-between items-center w-full border-b border-gray-600">
-          <button className="p-2 bg-gray-600 rounded-lg hover:bg-gray-500 transition" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-            <Menu size={24} />
-          </button>
-          <h1 className="text-xl font-semibold text-gray-300">Admin Dashboard</h1>
+        <div className="bg-blue-600 p-5 shadow-md flex justify-center items-center w-full border-b border-blue-500">
+          <h1 className="text-xl font-semibold text-white">Current Category: {activeSection}</h1>
         </div>
         <div className="p-8 grid grid-cols-2 gap-8 w-full h-full overflow-auto">
           {activeSection === "requests" && tenders.map((tender) => (
@@ -115,6 +122,10 @@ export default function AdminDashboard() {
                 <div className="bg-gray-900 p-4 rounded-lg shadow">
                   <h3 className="text-lg font-medium text-gray-300 text-center mb-2">Category Distribution</h3>
                   <Pie data={categoryData} />
+                </div>
+                <div className="bg-gray-900 p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-medium text-gray-300 text-center mb-2">Department Inventory Value</h3>
+                  <Bar data={departmentData} />
                 </div>
               </div>
             </div>
