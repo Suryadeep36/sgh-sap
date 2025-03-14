@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Monitors",
+        "quantity": 15,
+        "department": "IT",
+        "status": "Sufficient",
+        "price (per piece)": 5000,
+        "category": "Electronics",
+        "total_value": 75000
+    },
+    {
+        "id": 2,
+        "name": "Keyboards",
+        "quantity": 8,
+        "department": "IT",
+        "status": "Low Stock",
+        "price (per piece)": 1200,
+        "category": "Electronics",
+        "total_value": 9600
+    },
+    {
+        "id": 3,
+        "name": "Mice",
+        "quantity": 12,
+        "department": "IT",
+        "status": "Sufficient",
+        "price (per piece)": 800,
+        "category": "Electronics",
+        "total_value": 9600
+    },
+    {
+        "id": 4,
+        "name": "Laptops",
+        "quantity": 5,
+        "department": "IT",
+        "status": "Low Stock",
+        "price (per piece)": 60000,
+        "category": "Electronics",
+        "total_value": 300000
+    },
+    {
+        "id": 5,
+        "name": "Ethernet Cables",
+        "quantity": 20,
+        "department": "Networking",
+        "status": "Sufficient",
+        "price (per piece)": 500,
+        "category": "Networking Equipment",
+        "total_value": 10000
+    },
+    {
+        "id": 6,
+        "name": "Routers",
+        "quantity": 3,
+        "department": "Networking",
+        "status": "Low Stock",
+        "price (per piece)": 8000,
+        "category": "Networking Equipment",
+        "total_value": 24000
+    },
+    {
+        "id": 7,
+        "name": "External Hard Drives",
+        "quantity": 7,
+        "department": "IT",
+        "status": "Low Stock",
+        "price (per piece)": 7000,
+        "category": "Storage Devices",
+        "total_value": 49000
+    },
+    {
+        "id": 8,
+        "name": "RAM Modules (8GB)",
+        "quantity": 10,
+        "department": "IT",
+        "status": "Sufficient",
+        "price (per piece)": 3500,
+        "category": "Computer Components",
+        "total_value": 35000
+    },
+    {
+        "id": 9,
+        "name": "Power Strips",
+        "quantity": 6,
+        "department": "Facilities",
+        "status": "Low Stock",
+        "price (per piece)": 1500,
+        "category": "Electrical",
+        "total_value": 9000
+    },
+    {
+        "id": 10,
+        "name": "Projectors",
+        "quantity": 2,
+        "department": "Presentation",
+        "status": "Low Stock",
+        "price (per piece)": 45000,
+        "category": "Presentation Equipment",
+        "total_value": 90000
+    },
+    {
+        "id": 11,
+        "name": "Temperature Sensors",
+        "quantity": 25,
+        "department": "Instrumentation & Control",
+        "status": "Sufficient",
+        "price (per piece)": 1200,
+        "category": "Sensors",
+        "total_value": 30000
+    },
+    {
+        "id": 12,
+        "name": "PLC Controllers",
+        "quantity": 4,
+        "department": "Instrumentation & Control",
+        "status": "Low Stock",
+        "price (per piece)": 35000,
+        "category": "Automation",
+        "total_value": 140000
+    },
+    {
+        "id": 13,
+        "name": "Hydrochloric Acid (HCl)",
+        "quantity": 50,
+        "department": "Chemical",
+        "status": "Sufficient",
+        "price (per piece)": 500,
+        "category": "Chemical Reagents",
+        "total_value": 25000
+    },
+    {
+        "id": 14,
+        "name": "Bearings (Steel, 50mm)",
+        "quantity": 18,
+        "department": "Mechanical",
+        "status": "Sufficient",
+        "price (per piece)": 2000,
+        "category": "Mechanical Components",
+        "total_value": 36000
+    },
+    {
+        "id": 15,
+        "name": "Hydraulic Cylinders",
+        "quantity": 5,
+        "department": "Mechanical",
+        "status": "Low Stock",
+        "price (per piece)": 15000,
+        "category": "Hydraulics",
+        "total_value": 75000
+    }
+]
