@@ -105,14 +105,14 @@ export default function Operator() {
         </h2>
         <ul className="space-y-4">
           <li className="flex items-center gap-2 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer transition">
-            <Grid size={20} /> <Link to="/operator-dashboard">Dashboard</Link>
+            <Grid size={20} /> <Link to="/operator/">Dashboard</Link>
           </li>
           <li className="flex items-center gap-2 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer transition">
             <Box size={20} />{" "}
-            <Link to="/operator-inventory">Manage Inventory</Link>
+            <Link to="/operator/inventory">Manage Inventory</Link>
           </li>
           <li className="flex items-center gap-2 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer transition">
-            <BarChart size={20} /> <Link to="/operator-reports">Reports</Link>
+            <BarChart size={20} /> <Link to="/operator/reports">Reports</Link>
           </li>
         </ul>
       </div>
